@@ -1,30 +1,31 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 function Navbar(props) {
     return (
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Oussama Baccar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="#">Oussama Baccar</a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <NavLink exact className="nav-link" to="/">Home</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/Skills">Skills</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/Projects">Projects</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/Contact">Contact</NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     )
 }
 export default Navbar
