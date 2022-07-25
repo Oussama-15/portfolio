@@ -14,13 +14,13 @@ function Navbar(props) {
                             <NavLink exact className="nav-link" to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/Skills">Skills</NavLink>
+                            <NavLink className="nav-link" to="/skills">Skills</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/Projects">Projects</NavLink>
+                            <NavLink className="nav-link" to="/projects">Projects</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/Contact">Contact</NavLink>
+                            <NavLink className="nav-link" to="/contact">Contact</NavLink>
                         </li>
                     </ul>
                 </div>
