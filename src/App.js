@@ -6,6 +6,7 @@ import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import SkillDetails from './pages/SkillDetails'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Route exact path='/skills' component={Skills} />
         <Route path='/projects' component={Projects} />
         <Route path='/contact' component={Contact} />
-        <Route path='/skills/:id' component={SkillDetails} />
+        <Route exact path='/skills/:id' component={SkillDetails} />
+        <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
     </div>
